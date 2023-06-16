@@ -16,3 +16,13 @@ model User{
   password String 
   name  String?
 }
+
+model Film{
+  id Int @id @default(autoincrement())
+  title String
+  description String
+  director String
+  releaseDate DateTime
+  rating Int?
+  poster String?
+}
